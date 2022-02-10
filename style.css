@@ -1,86 +1,111 @@
-*{
-    background-color: rgb(171, 238, 238);
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVsonaXjsxCS5rWorBN-mJ_T8yf0-1I11ixg&usqp=CAU);
-}
-.h1{
-    border: none;
+body {
+    margin: 40px auto;
+    min-width: 500px;
+    max-width: 50%;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+  }
+  
+  #agecal {
+    color:orange;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
     text-align: center;
-}
-#tab{
-    width: 500px;
-    height: 300px;
-    margin-left: auto;
-    margin-right: auto;
-    border: 2px dashed rgb(182, 76, 76);
+    padding-bottom: 20px;
+  }
+  .container {
+    width: 40%;
+    min-width: 450px;
+    border-radius: 5px;
+    background-color:brown;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top:50%;
+    padding: 30px 50px;
+  }
+  .container * {
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   border: none;
+   outline: none;
+  }
+  .inputs-wrapper {
+    background-color: rgb(27, 27, 121);
+    padding: 30px 25px;
     border-radius: 10px;
-    padding: 50px;
-    background-color: rgb(228, 143, 143);   
-}
-#cl{
-    margin-bottom: 5px;
-    margin-left: auto;
-    margin-right: auto;
-    border: none;
-    border-radius: 10px;
-    padding: 10px;
-
-}
-tr{
-    text-align: center;
-}
-td{
-    text-align: center;
-}
-.cal{
+    box-shadow: 0 15px 20px rgba(0,0,0,3);
+    margin-bottom: 50px;
+  }
+  .heading {
+   color: azure;
+   font-weight: bold;
+   padding: 5px;
+  }
+  input,
+  button {
     height: 50px;
-    width: 4rem;
-    font-size:17px;
-    border:none;
-    margin: 5px;
-    padding: 1px;
-    color: rgb(97, 36, 8);
-}
-#button{
-    border: 1px solid black;
-    border-radius: 10px;
-    font-size: large;
-    margin: 10px;
-    padding: 10px;
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYUwpeBoZM7vSYLkm5P8tRL_n8LVGnz3Fo8A&usqp=CAU);
-}
-#reset{
-    border: 1px solid black;
-    border-radius: 8px;
-    font-size:15px ;
-    padding: 7px;
-    background-image: url(https://wallpapercave.com/wp/wp2704824.jpg);
-}
-
-.text{
-    text-align: center;
-    font-size: large;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin: 1.5rem;
-    color: rgb(26, 48, 49);
-}
-#last{
-    text-align: center;
-    margin: 30px;   
-}
-#result{
-    margin: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 50px;
-    border: 2px solid;
-    border-color: rgb(67, 89, 121);
-    border-radius: 20px;
-    width: 20rem;
-    text-align: left;
-}
-#rev{
-    background-color: beige;
-}
-p{
-    font-size: 21px;
-}
+    background-color: azure;
+    color: black;
+    font-weight: 500;
+    border-radius: 5px;
+  }
+  input {
+    width: 60%;
+    padding: 0 20px;
+    font-size: 14px;
+    color:black;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  button {
+    width: 30%;
+    float: right;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  button:hover {
+    cursor: pointer;
+  }
+  .outputs-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .outputs-wrapper div {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(27, 27, 121);
+    border-radius: 5px;
+    color:azure;
+    display:grid;
+    place-items: center;
+    padding: 20px 0;
+    box-shadow: 0 15px 20px rgba(0,0,0,3);
+  }
+  span{ 
+    font-size: 30px;
+    font-weight: 500;
+  }
+  p {
+    font-size: 14px;
+    color:azure;
+    font-weight: 500;
+  }
